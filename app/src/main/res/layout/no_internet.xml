@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/beige">
+
+    <ImageView
+        android:id="@+id/rescuelogo"
+        android:layout_width="400dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:alpha="0.1"
+        android:src="@drawable/victorialogo"
+        android:scaleType="fitCenter"/>
+
+    <ImageView
+        android:id="@+id/no_internet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/no_internet"/>
+
+    <TextView
+        android:id="@+id/warning_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/no_internet"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:text="Uh-oh, GoRescue can’t\nconnect right now.\nFor emergency help,\nplease contact these\nhotline numbers:"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium" />
+
+    <Button
+        android:id="@+id/btn_smart_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="28sp"
+        android:layout_below="@+id/warning_message"
+        android:text="Smart: 09395131408"
+        app:backgroundTint="@null"
+        android:background="@drawable/flat_button_bg"
+        />
+
+    <Button
+        android:id="@+id/btn_globe_sms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btn_smart_sms"
+        android:layout_marginTop="25dp"
+        android:text="Globe: 09773289562"
+        android:textSize="28sp"
+        app:backgroundTint="@null"
+        android:background="@drawable/flat_button_bg"/>
+</RelativeLayout>
