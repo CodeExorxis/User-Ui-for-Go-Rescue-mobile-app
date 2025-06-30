@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.rescueappforuser.databinding.ActivityMainBinding;
+import com.example.rescueappforuser.databinding.SignUpPageBinding;
 import com.example.rescueappforuser.databinding.SplashScreenActivityBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -47,6 +48,14 @@ public class MainActivity extends AppCompatActivity {
                     } else {
                         Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                     }
+                }
+            });
+
+            root.txtSignUp.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+                    startActivity(intent);
                 }
             });
         }, Splash_delay);

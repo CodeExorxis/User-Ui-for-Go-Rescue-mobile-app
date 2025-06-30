@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RescueAppForUser"
         tools:targetApi="31">
+        <activity android:name=".SignUpActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

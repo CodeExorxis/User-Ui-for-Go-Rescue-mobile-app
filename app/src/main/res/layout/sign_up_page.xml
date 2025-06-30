@@ -2,7 +2,215 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:background="@color/beige">
+
+    <TextView
+        android:id="@+id/tvfirstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First name*"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtFirstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvfirstname"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/edtsign_up_background"
+        />
+
+    <TextView
+        android:id="@+id/tvMiddleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Middle name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtFirstname"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtMiddleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMiddleName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/edtsign_up_background"
+        />
+
+    <TextView
+        android:id="@+id/tvLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last name*"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtMiddleName"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLastName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/edtsign_up_background"
+        />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Username*"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtLastName"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvUsername"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:hint="JuanDelacruz8888"
+        android:gravity="center"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/edtsign_up_background"
+        />
+
+    <TextView
+        android:id="@+id/tvEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email address*"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtUsername"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmailAddress"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/edtsign_up_background"
+        />
+
+    <TextView
+        android:id="@+id/tvPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone number*"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtEmailAddress"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPhoneNumber"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@drawable/edtsign_up_background"/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create password*"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/edtPhoneNumber"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/edtsign_up_background"/>
+
+    <TextView
+        android:id="@+id/tvConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create password*"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/edtPassword"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvConfirmPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/edtsign_up_background"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/edtConfirmPassword"
+        android:textSize="25sp"
+        android:text="Sign up"
+        app:backgroundTint="@null"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:background="@drawable/btn_login"
+        />
 
 </RelativeLayout>
