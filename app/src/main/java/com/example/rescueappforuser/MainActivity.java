@@ -10,46 +10,45 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.rescueappforuser.databinding.ActivityMainBinding;
+import com.example.rescueappforuser.databinding.SplashScreenActivityBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int Splash_delay = 2000;
-    EditText username, password;
-    Button btnLogin;
+    private ActivityMainBinding root;
+    private SplashScreenActivityBinding splashBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
-        setContentView(R.layout.activity_main);
+        splashBinding = SplashScreenActivityBinding.inflate(getLayoutInflater());
+        setContentView(splashBinding.getRoot());
 
 
         new Handler().postDelayed(() -> {
-            setContentView(R.layout.log_in_page);
+            root = ActivityMainBinding.inflate(getLayoutInflater());
+            setContentView(root.getRoot());
 
-
-            username = findViewById(R.id.edtUsername);
-            password = findViewById(R.id.edtPassword);
-            btnLogin = findViewById(R.id.btn_login);
-
-            btnLogin.setOnClickListener(new View.OnClickListener() {
+            root.btnLogin.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String userText = username.getText().toString().trim();
-                    String passText = password.getText().toString().trim();
+                    String userText = root.edtUsername.getText().toString().trim();
+                    String passText = root.edtPassword.getText().toString().trim();
 
                     if (userText.isEmpty()) {
-                        username.setError("Input Username");
-                        username.requestFocus();
+                        root.edtUsername.setError("Input Username");
+                        root.edtUsername.requestFocus();
                     } else if (passText.isEmpty()) {
-                        password.setError("Input Password");
-                        password.requestFocus();
+                        root.edtPassword.setError("Input Password");
+                        root.edtPassword.requestFocus();
                     } else {
                         Toast.makeText(MainActivity.this, "Login Successfully", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
-
         }, Splash_delay);
     }
 }
