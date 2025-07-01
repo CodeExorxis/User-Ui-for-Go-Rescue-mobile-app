@@ -11,6 +11,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.rescueappforuser.databinding.ActivityMainBinding;
+import com.example.rescueappforuser.databinding.OnetimepasswordactivityBinding;
 import com.example.rescueappforuser.databinding.SignUpPageBinding;
 import com.example.rescueappforuser.databinding.SplashScreenActivityBinding;
 
@@ -18,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final int Splash_delay = 2000;
     private ActivityMainBinding root;
+    private OnetimepasswordactivityBinding binding;
     private SplashScreenActivityBinding splashBinding;
 
     @Override
