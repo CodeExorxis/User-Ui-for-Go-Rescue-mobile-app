@@ -1,7 +1,8 @@
 <resources>
     <string name="app_name">RescueAppForUser</string>
-    <string name="reset_password_icon_desc">Reset password icon</string>
-    <string name="forgot_password_icon_desc">Forgot password</string>
+    <string name="reset_password_icon">Reset password icon</string>
+    <string name="change_password_ic">change password icon</string>
+    <string name="forgot_password_ic">Forgot password</string>
     <string name="otp_instruction_text">An OTP has been sent to your\nregistered phone number\nPlease check your inbox to proceed.</string>
     <string name="forgotPassword_instruction_text">Enter your username to\nreceive a one-time password (OTP)\nat your registered mobile number.</string>
     <string name="otp_digit_1">0</string>

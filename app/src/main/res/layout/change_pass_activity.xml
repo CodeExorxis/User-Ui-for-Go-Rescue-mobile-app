@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/beige">
+
+
+    <ImageView
+        android:id="@+id/ic_profile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_profile"
+        android:layout_marginTop="120dp"
+        android:contentDescription="@string/change_password_ic"/>
+
+    <TextView
+        android:id="@+id/tvChangePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Your Password"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/ic_profile"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/tvNewPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Password*"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/tvChangePass"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNewPass"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:hint="new password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edtsign_up_background"/>
+
+    <TextView
+        android:id="@+id/tvreenterpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Re-enter new password*"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/edtPassword"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/edtreenterpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvreenterpass"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="50dp"
+        android:hint="Re-enter password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:background="@drawable/edtsign_up_background"/>
+
+
+    <Button
+        android:id="@+id/OTPbtn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_below="@id/edtreenterpass"
+        android:textSize="25sp"
+        android:text="Submit"
+        app:backgroundTint="@null"
+        android:textColor="@color/skyblue"
+        android:textStyle="bold"
+        android:background="@drawable/otp_btnsubmit"/>
+
+
+
+
+</RelativeLayout>
