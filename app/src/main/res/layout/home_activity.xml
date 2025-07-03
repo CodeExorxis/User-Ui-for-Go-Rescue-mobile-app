@@ -153,7 +153,7 @@
             android:background="@drawable/flat_button_bg"
             app:backgroundTint="@null"
             android:padding="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_marginBottom="20dp" />
 
         <Button
@@ -254,7 +254,7 @@
             android:background="@drawable/flat_button_bg"
             app:backgroundTint="@null"
             android:padding="10dp"
-            android:textColor="@android:color/black"
+            android:textColor="@android:color/white"
             android:layout_marginBottom="20dp" />
 
         <Button
