@@ -179,6 +179,15 @@
         android:padding="12dp"
         android:background="@drawable/edtsign_up_background"/>
 
+    <ImageView
+        android:id="@+id/ic_eye_open_createPass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/tvPassword"
+        android:src="@drawable/ic_eye_open"
+        android:layout_marginLeft="250dp"/>
+
     <TextView
         android:id="@+id/tvConfirmPassword"
         android:layout_width="match_parent"
@@ -202,6 +211,15 @@
         android:inputType="textPassword"
         android:padding="12dp"
         android:background="@drawable/edtsign_up_background"/>
+
+    <ImageView
+        android:id="@+id/ic_eye_open_confirmPass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/tvConfirmPassword"
+        android:src="@drawable/ic_eye_open"
+        android:layout_marginLeft="250dp"/>
 
     <Button
         android:id="@+id/btn_login"

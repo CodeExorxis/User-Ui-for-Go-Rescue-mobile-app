@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ic_menu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_menu"
+        android:contentDescription="@string/menu_ic"/>
+
+    <ImageView
+        android:id="@+id/ic_location_on"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_location_on"
+        android:contentDescription="@string/location_on_ic"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:text="Google Map API"/>
+
+    <Button
+        android:id="@+id/emReport"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="20dp"
+        android:text="@string/EmReport"
+        android:background="@drawable/btn_emergency"
+        app:backgroundTint="@null"/>
+
+    <Button
+        android:id="@+id/emHotLine"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:text="@string/EmHotline"
+        android:background="@drawable/btn_emergency"
+        app:backgroundTint="@null"/>
+
+
+    <!--DialogFragment after the emergency button-->
+    <LinearLayout
+        android:id="@+id/emergencyCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:layout_marginBottom="80dp">
+
+
+        <Button
+            android:id="@+id/btnMedical"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:text="Medical Assistance"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnVehicular"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:text="Vehicular Accident"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            android:textSize="20sp"
+            android:layout_marginBottom="12dp"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnDisaster"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:text="Disaster"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp"
+            app:backgroundTint="@null"/>
+
+    </LinearLayout>
+
+    <!--DialogFragment after the Medical Assistance-->
+    <LinearLayout
+        android:id="@+id/medicalOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:padding="16dp"
+        android:layout_marginBottom="80dp">
+
+        <Button
+            android:id="@+id/btnHeartAttack"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:text="Heart Attack"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/btnHighFever"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:text="High Fever"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtOtherMedical"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:hint="Other (please specify)"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnSubmitMedical"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:text="Submit Report"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_login"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+    <!--DialogFragment after the Vehicular Accident-->
+    <LinearLayout
+        android:id="@+id/vehicularOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/btnOneCasualty"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:text="One Casualty"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnMultipleCasualty"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:text="Multiple Casualty"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnSubmitVehicular"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:text="Submit Report"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_login"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+    <!--DialogFragment after the Disaster button-->
+    <LinearLayout
+        android:id="@+id/disasterOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/btnEarthquake"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:text="Earthquake"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnTyphoon"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:text="Typhoon"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/edtOtherDisaster"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:hint="Other (please specify)"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnSubmitDisaster"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:text="Submit Report"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/btn_login"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

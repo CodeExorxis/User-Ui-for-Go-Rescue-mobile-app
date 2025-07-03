@@ -52,6 +52,16 @@
         android:padding="12dp"
         android:background="@drawable/edtsign_up_background"/>
 
+    <ImageView
+        android:id="@+id/ic_eye_open_newPass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvNewPass"
+        android:src="@drawable/ic_eye_open"
+        android:layout_marginLeft="250dp"/>
+
+
     <TextView
         android:id="@+id/tvreenterpass"
         android:layout_width="match_parent"
@@ -76,6 +86,15 @@
         android:inputType="textPassword"
         android:padding="12dp"
         android:background="@drawable/edtsign_up_background"/>
+
+    <ImageView
+        android:id="@+id/ic_eye_open_reenterPass"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/tvreenterpass"
+        android:src="@drawable/ic_eye_open"
+        android:layout_marginLeft="250dp"/>
 
 
     <Button
