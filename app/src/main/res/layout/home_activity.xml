@@ -110,7 +110,7 @@
 
     </LinearLayout>
 
-    <!--DialogFragment after the Medical Assistance-->
+    <!--MultiLayout screen after the Medical Assistance-->
     <LinearLayout
         android:id="@+id/medicalOptionsLayout"
         android:layout_width="match_parent"
@@ -166,7 +166,8 @@
             android:background="@drawable/btn_login"
             app:backgroundTint="@null"/>
     </LinearLayout>
-    <!--DialogFragment after the Vehicular Accident-->
+
+    <!--MultiLayout screen after the Vehicular Accident-->
     <LinearLayout
         android:id="@+id/vehicularOptionsLayout"
         android:layout_width="match_parent"
@@ -206,11 +207,12 @@
             android:text="Submit Report"
             android:textColor="@android:color/white"
             android:background="@drawable/btn_login"
+            android:textSize="20sp"
             app:backgroundTint="@null"
             android:layout_marginBottom="20dp" />
     </LinearLayout>
 
-    <!--DialogFragment after the Disaster button-->
+    <!--MultiLayout screen after the Disaster button-->
     <LinearLayout
         android:id="@+id/disasterOptionsLayout"
         android:layout_width="match_parent"
