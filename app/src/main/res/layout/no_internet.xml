@@ -39,7 +39,7 @@
         android:fontFamily="sans-serif-medium" />
 
     <Button
-        android:id="@+id/btn_smart_sms"
+        android:id="@+id/btnSmsSmart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -52,11 +52,11 @@
         />
 
     <Button
-        android:id="@+id/btn_globe_sms"
+        android:id="@+id/btnSmsGlobe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/btn_smart_sms"
+        android:layout_below="@id/btnSmsSmart"
         android:layout_marginTop="25dp"
         android:text="Globe: 09773289562"
         android:textSize="28sp"

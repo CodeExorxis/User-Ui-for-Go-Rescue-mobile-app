@@ -59,7 +59,7 @@
         app:backgroundTint="@null"/>
 
 
-    <!--DialogFragment after the emergency button-->
+    <!--the emergency button-->
     <LinearLayout
         android:id="@+id/emergencyCategories"
         android:layout_width="match_parent"
@@ -267,6 +267,41 @@
             android:background="@drawable/btn_login"
             app:backgroundTint="@null"
             android:layout_marginBottom="20dp" />
+    </LinearLayout>
+
+    <!--MultiLayout screen after the Vehicular Accident-->
+    <LinearLayout
+        android:id="@+id/EmergencyNumOptionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/btnSmartSms"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="Smart: 09395131408"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnGlobeSms"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:textSize="20sp"
+            android:text="Globe: 09773289562"
+            android:textColor="@android:color/white"
+            android:background="@drawable/flat_button_bg"
+            app:backgroundTint="@null"
+            android:layout_marginBottom="80dp" />
+
     </LinearLayout>
 
 

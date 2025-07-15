@@ -3,6 +3,7 @@ package com.example.rescueappforuser;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.rescueappforuser.databinding.ActivityMainBinding;
 import com.example.rescueappforuser.databinding.HomeActivityBinding;
+import com.example.rescueappforuser.databinding.NoInternetBinding;
 import com.example.rescueappforuser.databinding.OnetimepasswordactivityBinding;
 import com.example.rescueappforuser.databinding.SignUpPageBinding;
 import com.example.rescueappforuser.databinding.SplashScreenActivityBinding;
@@ -21,6 +23,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
+
 
     HomeActivityBinding root;
     String selectedMedicalCondition = "";
@@ -167,6 +170,26 @@ public class MainActivity extends AppCompatActivity {
             root.edtOtherDisaster.setText("");
             resetDisasterButtons();
             selectedDisasterCondition = "";
+        });
+        // Show emergency number categories
+        root.emHotLine.setOnClickListener(v -> {
+            root.EmergencyNumOptionsLayout.setVisibility(View.VISIBLE);
+            root.emReport.setVisibility(View.GONE);
+            root.emHotLine.setVisibility(View.GONE);
+        });
+        // This method of SMS will redirect to the SMS outside the system
+        root.btnGlobeSms.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("sms:09773289562"));  // Replace with real hotline number
+            intent.putExtra("sms_body", "Hello, Kialangan ko po ng tulong Medical.");  // Optional
+            startActivity(intent);
+        });
+
+        root.btnSmartSms.setOnClickListener(v -> {
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(Uri.parse("sms:09395131408"));  // Replace with real hotline number
+            intent.putExtra("sms_body", "Hello, Kialangan ko po ng tulong Medical.");  // Optional
+            startActivity(intent);
         });
     }
 
