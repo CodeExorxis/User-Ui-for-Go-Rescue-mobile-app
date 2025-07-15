@@ -300,7 +300,7 @@
             android:textColor="@android:color/white"
             android:background="@drawable/flat_button_bg"
             app:backgroundTint="@null"
-            android:layout_marginBottom="80dp" />
+            android:layout_marginBottom="75dp" />
 
     </LinearLayout>
 
