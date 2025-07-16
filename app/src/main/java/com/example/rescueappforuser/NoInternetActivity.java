@@ -23,14 +23,14 @@ public class NoInternetActivity extends AppCompatActivity{
         // This method of SMS will redirect to the SMS outside the system
         root.btnSmsSmart.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("sms:09773289562"));  // Replace with real hotline number
+            intent.setData(Uri.parse("sms:09395131408"));  // Replace with real hotline number
             intent.putExtra("sms_body", "Hello, Kialangan ko po ng tulong Medical.");  // Optional
             startActivity(intent);
         });
 
         root.btnSmsGlobe.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW);
-            intent.setData(Uri.parse("sms:09395131408"));  // Replace with real hotline number
+            intent.setData(Uri.parse("sms:09773289562"));  // Replace with real hotline number
             intent.putExtra("sms_body", "Hello, Kialangan ko po ng tulong Medical.");  // Optional
             startActivity(intent);
         });
