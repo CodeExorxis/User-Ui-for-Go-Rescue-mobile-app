@@ -9,7 +9,7 @@
         android:id="@+id/notif_back_layout"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="#EEEEEE"
+        android:background="@color/light_gray"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:gravity="center_vertical">
