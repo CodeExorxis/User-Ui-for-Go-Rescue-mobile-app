@@ -18,6 +18,7 @@
         android:scaleType="fitCenter"/>
 
     <TextView
+        android:id="@+id/tvGoRescue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GO RESCUE"
@@ -28,7 +29,6 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/irishgrover"
         android:layout_marginTop="16dp"/>
-
 
 
 
