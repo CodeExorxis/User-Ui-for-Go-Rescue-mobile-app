@@ -15,7 +15,7 @@ import com.example.rescueappforuser.databinding.ActivityMainBinding;
 import com.example.rescueappforuser.databinding.HomeActivityBinding;
 import com.example.rescueappforuser.databinding.NoInternetBinding;
 import com.example.rescueappforuser.databinding.OnetimepasswordactivityBinding;
-import com.example.rescueappforuser.databinding.SignUpPageBinding;
+import com.example.rescueappforuser.databinding.SignUpActivityBinding;
 import com.example.rescueappforuser.databinding.SplashScreenActivityBinding;
 
 import androidx.appcompat.app.AppCompatActivity;
