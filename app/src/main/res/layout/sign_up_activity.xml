@@ -88,7 +88,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginLeft="15dp"
         android:textColor="@color/black"
-        android:layout_below="@id/edtLastName"
+        android:layout_below="@id/edtPhoneNumber"
         android:textStyle="bold"
         android:textSize="24sp"/>
 
@@ -114,7 +114,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginLeft="15dp"
         android:textColor="@color/black"
-        android:layout_below="@id/edtUsername"
+        android:layout_below="@id/edtLastName"
         android:textStyle="bold"
         android:textSize="24sp"/>
 
@@ -163,7 +163,7 @@
         android:layout_marginTop="2dp"
         android:layout_marginLeft="15dp"
         android:textColor="@color/black"
-        android:layout_below="@id/edtPhoneNumber"
+        android:layout_below="@id/edtUsername"
         android:textStyle="bold"
         android:textSize="24sp"/>
 
