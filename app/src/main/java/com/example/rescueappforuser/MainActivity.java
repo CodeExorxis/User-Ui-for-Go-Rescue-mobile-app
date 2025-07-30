@@ -36,30 +36,6 @@ public class MainActivity extends AppCompatActivity {
         root = HomeActivityBinding.inflate(getLayoutInflater());
         setContentView(root.getRoot());
 
-        //Navigation drawer side menu
-        root.icMenu.setOnClickListener(v -> {
-            if (root.sideMenuLayout.getVisibility() == View.GONE) {
-                root.sideMenuLayout.setVisibility(View.VISIBLE);
-            } else {
-                root.sideMenuLayout.setVisibility(View.GONE);
-            }
-        });
-        root.icMenu.setOnClickListener(v -> {
-            if (root.sideMenuLayout.getVisibility() == View.GONE) {
-                root.sideMenuLayout.setVisibility(View.VISIBLE);
-                root.overlayView.setVisibility(View.VISIBLE);
-            } else {
-                root.sideMenuLayout.setVisibility(View.GONE);
-                root.overlayView.setVisibility(View.GONE);
-            }
-        });
-        // Hide menu when clicking the overlay
-        root.overlayView.setOnClickListener(v -> {
-            root.sideMenuLayout.setVisibility(View.GONE);
-            root.overlayView.setVisibility(View.GONE);
-        });
-
-
         // Show emergency categories
         root.emReport.setOnClickListener(v -> {
             root.emergencyCategories.setVisibility(View.VISIBLE);
